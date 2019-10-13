@@ -16,4 +16,36 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
 
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:text="SELECT FILE"
+        android:layout_below="@id/download"
+        android:id="@+id/upload_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/filename"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_below="@id/upload_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:text="Upload File"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/filename"
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
