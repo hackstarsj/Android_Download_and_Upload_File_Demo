@@ -100,12 +100,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        Button advacneUpload=findViewById(R.id.advanceupload);
+        advacneUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,AdvanceFileUpload.class));
+            }
+        });
+
+
+
     }
 
     private void UploadFile() {
         UploadTask uploadTask=new UploadTask();
         uploadTask.execute(new String[]{file_path});
-
     }
 
     private void beginDownload(String file_link){

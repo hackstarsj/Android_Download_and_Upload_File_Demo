@@ -11,15 +11,15 @@
     android:id="@+id/download"
     android:textColor="#fff"
     android:text="Download File"
-    android:layout_centerInParent="true"
-    android:gravity="center"
+    android:layout_marginTop="10dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
 
     <ProgressBar
+        android:background="#fff"
         android:visibility="gone"
+        android:layout_centerInParent="true"
         android:id="@+id/progress"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="100dp"
         android:layout_width="wrap_content"
@@ -46,6 +46,16 @@
         android:background="@color/colorPrimaryDark"
         android:layout_below="@+id/filename"
         android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="Advance Upload"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/upload"
+        android:id="@+id/advanceupload"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </RelativeLayout>
