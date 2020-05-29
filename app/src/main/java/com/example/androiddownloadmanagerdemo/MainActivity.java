@@ -227,7 +227,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String getRealPathFromUri(Uri uri,Activity activity){
-        Cursor cursor=activity.getContentResolver().query(uri,null,null,null,null);
+        String[] proj = { MediaStore.Images.Media.DATA };
+        Cursor cursor=activity.getContentResolver().query(uri,proj,null,null,null);
         if(cursor==null){
             return uri.getPath();
         }
