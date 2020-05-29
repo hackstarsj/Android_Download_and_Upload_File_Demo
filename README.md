@@ -9,5 +9,5 @@ Added  New Feature
 
 
 <h2>Added Fixed for File Uploading :</h2>
-1. Added android:requestLegacyExternalStorage="true" in AndroidManifest.xml in application Tag
+1. Added android:requestLegacyExternalStorage="true" in AndroidManifest.xml in application Tag<br>
 2. Added Projection in getRealPathFromUri() Method String[] proj = { MediaStore.Images.Media.DATA }; in MainActivity.java
